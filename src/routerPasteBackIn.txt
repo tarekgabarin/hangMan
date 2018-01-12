@@ -1,0 +1,37 @@
+<Router>
+                    <div>
+
+
+
+                    <NavBar/>
+
+                        <Switch>
+                    <Route path={'/'} component={InfoBar} render={(props) => (
+
+                        <InfoBar  hangMan={this.state.hangMan} answerMap={this.state.answerMap}
+                            notification={this.state.notification} handleContinue={this.handleContinue}
+                            handleSubmit={this.handleSubmit} handleGuess={this.handleGuess}
+                            livesLeft={this.state.livesLeft} gameFinished={this.state.gameFinished}
+                            correctAmount={this.state.correctAmount} outComeMessage={this.state.outComeMessage}
+                            nWrong={this.state.nWrong} pastGuesses={this.state.pastGuesses}
+                            numberOfGuesses={this.state.numberOfGuesses} nCorrect={this.state.nCorrect}
+                            answer={this.state.answer}/>
+
+                    )}  >
+
+
+
+
+                    </Route>
+
+
+
+                    </Switch>
+
+
+
+
+
+
+                    </div>
+                </Router>
